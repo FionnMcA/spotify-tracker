@@ -10,7 +10,7 @@ CLIENT_ID = os.getenv('CLIENT_ID')
 CLIENT_SECRET = os.getenv('CLIENT_SECRET')
 app = Flask(__name__)
 
-scope = 'user-read-private user-read-email'
+scope = 'user-read-private user-read-email user-read-recently-played'
 redirect_uri = 'http://127.0.0.1:5000/callback'
 @app.route('/')
 def index():
